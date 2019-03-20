@@ -1,8 +1,8 @@
 def reverse_each_word (string)
-  str = string.split("")
   array = []
-  str.each do |i|
-    array << str.pop
-    array.join
+  str = string.length - 1 
+  string.each downto(0) do |index|
+    array << str[index]
   end
+ array
 end
